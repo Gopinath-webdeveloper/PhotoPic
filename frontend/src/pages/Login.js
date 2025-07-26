@@ -12,7 +12,7 @@ function Login() {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    console.log(`$process.env.REACT_APP_API_URL}/api/auth/login`);
+    console.log(`${process.env.REACT_APP_API_URL}/api/auth/login`);
     e.preventDefault();
     setError('');
     try {
